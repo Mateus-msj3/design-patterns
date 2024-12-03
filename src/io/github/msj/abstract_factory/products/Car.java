@@ -1,4 +1,4 @@
-package io.github.msj.products;
+package io.github.msj.abstract_factory.products;
 
 public class Car implements Vehicle {
 

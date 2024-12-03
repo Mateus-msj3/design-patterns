@@ -1,7 +1,7 @@
-import io.github.msj.client.TransportClient;
-import io.github.msj.transports.RuralTransportFactory;
-import io.github.msj.transports.TransportFactory;
-import io.github.msj.transports.UrbanTransportFactory;
+import io.github.msj.abstract_factory.client.TransportClient;
+import io.github.msj.abstract_factory.transports.RuralTransportFactory;
+import io.github.msj.abstract_factory.transports.TransportFactory;
+import io.github.msj.abstract_factory.transports.UrbanTransportFactory;
 
 public class Main {
     public static void main(String[] args) {

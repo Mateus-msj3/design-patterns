@@ -1,8 +1,8 @@
-package io.github.msj.client;
+package io.github.msj.abstract_factory.client;
 
-import io.github.msj.products.Vehicle;
-import io.github.msj.products.Wheel;
-import io.github.msj.transports.TransportFactory;
+import io.github.msj.abstract_factory.products.Vehicle;
+import io.github.msj.abstract_factory.products.Wheel;
+import io.github.msj.abstract_factory.transports.TransportFactory;
 
 public class TransportClient {
 
