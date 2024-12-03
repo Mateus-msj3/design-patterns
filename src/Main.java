@@ -1,15 +1,20 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import io.github.msj.client.TransportClient;
+import io.github.msj.transports.RuralTransportFactory;
+import io.github.msj.transports.TransportFactory;
+import io.github.msj.transports.UrbanTransportFactory;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Criando um ambiente urbano
+        TransportFactory urbanFactory = new UrbanTransportFactory();
+        TransportClient urbanClient = new TransportClient(urbanFactory);
+        urbanClient.operate();  // Conduzindo um carro | Rodando as rodas do carro
+
+        // Criando um ambiente rural
+        TransportFactory ruralFactory = new RuralTransportFactory();
+        TransportClient ruralClient = new TransportClient(ruralFactory);
+        ruralClient.operate();  // Conduzindo um caminhão | Rodando as rodas do caminhão
+
     }
 }
