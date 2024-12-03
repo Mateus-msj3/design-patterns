@@ -7,13 +7,13 @@ import io.github.msj.adapter.adaptee.OldPaymentSystem;
 import io.github.msj.adapter.adaptee.OldPaymentSystemImpl;
 import io.github.msj.adapter.client.PaymentClient;
 import io.github.msj.adapter.target.PaymentGateway;
+import io.github.msj.builder.Order;
 
 public class Main {
     public static void main(String[] args) {
-
         createPatternAbstractFactory();
         createPatternAdapter();
-
+        createPatternBuilder();
     }
 
     private static void createPatternAbstractFactory() {
@@ -38,5 +38,24 @@ public class Main {
         // Cliente usa a interface moderna para fazer o pagamento
         PaymentClient paymentClient = new PaymentClient(paymentGateway);
         paymentClient.makePayment(100.0);  // Saída: Pagamento processado pelo sistema antigo: 100.0
+    }
+
+    private static void createPatternBuilder() {
+        // Construindo um pedido simples
+        Order order1 = new Order.OrderBuilder("Pizza")
+                .drink("Coca-Cola")
+                .dessert("Pudim")
+                .extraSauce(true)
+                .cutleryIncluded(false)
+                .build();
+
+        System.out.println(order1);
+
+        // Construindo outro pedido com menos detalhes
+        Order order2 = new Order.OrderBuilder("Hambúrguer")
+                .drink("Suco de Laranja")
+                .build();
+
+        System.out.println(order2);
     }
 }
