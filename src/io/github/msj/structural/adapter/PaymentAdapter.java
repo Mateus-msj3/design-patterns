@@ -1,7 +1,7 @@
-package io.github.msj.adapter;
+package io.github.msj.structural.adapter;
 
-import io.github.msj.adapter.adaptee.OldPaymentSystem;
-import io.github.msj.adapter.target.PaymentGateway;
+import io.github.msj.structural.adapter.adaptee.OldPaymentSystem;
+import io.github.msj.structural.adapter.target.PaymentGateway;
 
 public class PaymentAdapter implements PaymentGateway {
 

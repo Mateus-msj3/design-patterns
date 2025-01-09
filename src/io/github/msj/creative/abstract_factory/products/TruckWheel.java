@@ -1,4 +1,4 @@
-package io.github.msj.abstract_factory.products;
+package io.github.msj.creative.abstract_factory.products;
 
 public class TruckWheel implements Wheel {
 

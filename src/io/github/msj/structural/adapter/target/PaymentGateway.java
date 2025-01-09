@@ -1,4 +1,4 @@
-package io.github.msj.adapter.target;
+package io.github.msj.structural.adapter.target;
 
 public interface PaymentGateway {
 

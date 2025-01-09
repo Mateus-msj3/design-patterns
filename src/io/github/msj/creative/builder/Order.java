@@ -1,4 +1,4 @@
-package io.github.msj.builder;
+package io.github.msj.creative.builder;
 
 public class Order {
 

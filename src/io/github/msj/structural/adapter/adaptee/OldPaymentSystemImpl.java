@@ -1,4 +1,4 @@
-package io.github.msj.adapter.adaptee;
+package io.github.msj.structural.adapter.adaptee;
 
 public class OldPaymentSystemImpl implements OldPaymentSystem {
 

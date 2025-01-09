@@ -1,6 +1,6 @@
-package io.github.msj.adapter.client;
+package io.github.msj.structural.adapter.client;
 
-import io.github.msj.adapter.target.PaymentGateway;
+import io.github.msj.structural.adapter.target.PaymentGateway;
 
 public class PaymentClient {
 

@@ -1,13 +1,13 @@
-import io.github.msj.abstract_factory.client.TransportClient;
-import io.github.msj.abstract_factory.transports.RuralTransportFactory;
-import io.github.msj.abstract_factory.transports.TransportFactory;
-import io.github.msj.abstract_factory.transports.UrbanTransportFactory;
-import io.github.msj.adapter.PaymentAdapter;
-import io.github.msj.adapter.adaptee.OldPaymentSystem;
-import io.github.msj.adapter.adaptee.OldPaymentSystemImpl;
-import io.github.msj.adapter.client.PaymentClient;
-import io.github.msj.adapter.target.PaymentGateway;
-import io.github.msj.builder.Order;
+import io.github.msj.creative.abstract_factory.client.TransportClient;
+import io.github.msj.creative.abstract_factory.transports.RuralTransportFactory;
+import io.github.msj.creative.abstract_factory.transports.TransportFactory;
+import io.github.msj.creative.abstract_factory.transports.UrbanTransportFactory;
+import io.github.msj.structural.adapter.PaymentAdapter;
+import io.github.msj.structural.adapter.adaptee.OldPaymentSystem;
+import io.github.msj.structural.adapter.adaptee.OldPaymentSystemImpl;
+import io.github.msj.structural.adapter.client.PaymentClient;
+import io.github.msj.structural.adapter.target.PaymentGateway;
+import io.github.msj.creative.builder.Order;
 
 public class Main {
     public static void main(String[] args) {
